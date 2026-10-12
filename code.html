@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Rodrigo Mendes | Head de Controladoria &amp; FP&amp;A</title>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;family=Merriweather:wght@400;700;900&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface": "#f8fafc",
+            "background": "#f8fafc",
+            "primary": "#0f172a",
+            "secondary": "#0284c7",
+            "secondary-dark": "#0369a1",
+            "secondary-light": "#e0f2fe",
+            "surface-card": "#ffffff",
+            "on-surface": "#0f172a",
+            "on-surface-variant": "#475569",
+            "border-subtle": "rgba(226, 232, 240, 0.8)",
+          },
+          fontFamily: {
+            sans: ["Inter", "sans-serif"],
+            serif: ["Merriweather", "serif"],
+          }
+        }
+      }
+    };
+  </script>
+<style>
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(18px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .animate-fade-in-up {
+      animation: fadeInUp 0.65s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(226, 232, 240, 0.85);
+    }
+    .glass-card-hover {
+      transition: all 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .glass-card-hover:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 30px -10px rgba(15, 23, 42, 0.08), 0 4px 6px -2px rgba(15, 23, 42, 0.03);
+      border-color: rgba(2, 132, 199, 0.35);
+    }
+    .mesh-gradient {
+      background: radial-gradient(at 0% 0%, rgba(2, 132, 199, 0.07) 0px, transparent 50%),
+                  radial-gradient(at 100% 0%, rgba(14, 165, 233, 0.08) 0px, transparent 50%),
+                  radial-gradient(at 50% 100%, rgba(241, 245, 249, 0.8) 0px, transparent 60%);
+    }
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f1f5f9;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #cbd5e1;
+      border-radius: 9999px;
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface font-sans antialiased selection:bg-secondary-light selection:text-secondary-dark">
+<!-- Compact Blur Header -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200/70 transition-all duration-300">
+<div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-4">
+<a class="flex items-center gap-3 group" href="#">
+<div class="w-9 h-9 rounded-lg bg-primary text-white flex items-center justify-center font-bold text-sm shadow-sm group-hover:bg-secondary transition-colors">
+          RM
+        </div>
+<div class="flex flex-col">
+<span class="font-bold text-sm tracking-tight text-primary leading-tight">Rodrigo Mendes</span>
+<span class="text-[11px] text-slate-500 font-medium">Head de Controladoria &amp; FP&amp;A</span>
+</div>
+</a>
+<!-- Quick Nav Links -->
+<nav class="hidden md:flex items-center gap-1 text-xs font-semibold text-slate-600">
+<a class="px-3 py-1.5 rounded-md hover:text-primary hover:bg-slate-100/80 transition-all" href="#metricas">Métricas</a>
+<a class="px-3 py-1.5 rounded-md hover:text-primary hover:bg-slate-100/80 transition-all" href="#trajetoria">Trajetória</a>
+<a class="px-3 py-1.5 rounded-md hover:text-primary hover:bg-slate-100/80 transition-all" href="#competencias">Skills &amp; Stack</a>
+<a class="px-3 py-1.5 rounded-md hover:text-primary hover:bg-slate-100/80 transition-all" href="#formacao">Credenciais</a>
+<a class="px-3 py-1.5 rounded-md text-secondary hover:bg-sky-50 transition-all" href="#contato">Contato</a>
+</nav>
+<!-- Action Buttons -->
+<div class="flex items-center gap-2">
+<a class="hidden sm:inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-lg border border-slate-300 bg-white text-slate-700 hover:bg-slate-50 hover:border-slate-400 transition-all shadow-xs" href="#contato">
+<span class="material-symbols-outlined text-[15px] text-secondary">mail</span>
+          Contato
+        </a>
+<a class="inline-flex items-center gap-1.5 text-xs font-semibold px-3.5 py-1.5 rounded-lg bg-primary text-white hover:bg-slate-800 transition-all shadow-sm" href="#contato">
+<span>Agendar Diálogo</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</header>
+<main class="pt-16 w-full mesh-gradient">
+<!-- Top Status Ribbon -->
+<div class="border-b border-slate-200/60 bg-white/50 backdrop-blur-xs py-2 px-4 text-center">
+<div class="max-w-6xl mx-auto flex flex-wrap items-center justify-center gap-x-6 gap-y-1 text-xs text-slate-600">
+<span class="inline-flex items-center gap-1.5 font-semibold text-slate-900">
+<span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+          Disponível: Diretoria Executiva (CFO/Controller) &amp; Conselhos Consultivos
+        </span>
+<span class="hidden sm:inline text-slate-300">•</span>
+<span class="inline-flex items-center gap-1 text-slate-600">
+<span class="material-symbols-outlined text-[14px] text-secondary">verified</span>
+          CRC/SP Ativo #1SP289410/O-4
+        </span>
+<span class="hidden sm:inline text-slate-300">•</span>
+<span class="text-slate-500">São Paulo, SP (Disponibilidade para Viagens e Mobilidade)</span>
+</div>
+</div>
+<!-- Hero Dinâmico & Compacto -->
+<section class="max-w-6xl mx-auto px-4 sm:px-6 pt-10 pb-12 animate-fade-in-up">
+<div class="glass-card rounded-2xl p-6 sm:p-8 md:p-10 shadow-sm border border-slate-200/80 relative overflow-hidden">
+<div class="absolute -right-20 -top-20 w-64 h-64 bg-sky-200/40 rounded-full blur-3xl pointer-events-none"></div>
+<div class="flex flex-col md:flex-row items-center md:items-start gap-6 md:gap-8 relative z-10">
+<!-- Exec Avatar with Badge -->
+<div class="relative shrink-0">
+<div class="relative w-28 h-28 sm:w-32 sm:h-32 rounded-2xl overflow-hidden ring-4 ring-white shadow-lg">
+<img alt="Rodrigo Mendes" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHnOAT7ynIeQQGmSVrcaaYBi3EGdBzQ0GeVw1FLDk-nnMrzV0eTXa81NO1XI3Aj6iHw8O9tPZLmocmgJRqyIV_sTDgnc2DhJQDTeTXlqeT2dZbiMnQbXtFR4TbXLKYSQXk5elHqBneLnkF38gQYajMGUWoIOVRBa_wyKok0GEI3EpQjWy0cxHOm41Yt_udhd32NpWxfRAzaN4ReJCUVP3dGbtPqudUdseiV8Z14aA"/>
+</div>
+<span class="absolute -bottom-2 left-1/2 -translate-x-1/2 bg-slate-900 text-white text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded-full whitespace-nowrap shadow-sm border border-slate-700">
+              Ex-PwC • 15+ Anos
+            </span>
+</div>
+<!-- Bio & Quick Content -->
+<div class="flex-1 text-center md:text-left">
+<div class="flex flex-wrap items-center justify-center md:justify-start gap-2 mb-2">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-semibold bg-sky-100 text-sky-800 border border-sky-200">
+<span class="w-1.5 h-1.5 rounded-full bg-sky-600"></span>
+                C-Level / Head Financeiro
+              </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-medium bg-slate-100 text-slate-700 border border-slate-200">
+                CRC Regularizado
+              </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-medium bg-slate-100 text-slate-700 border border-slate-200">
+                MBA FGV • FEA-USP
+              </span>
+</div>
+<h1 class="font-serif text-3xl sm:text-4xl text-slate-900 font-bold tracking-tight mb-2">
+              Rodrigo Mendes
+            </h1>
+<p class="text-base sm:text-lg font-semibold text-secondary mb-3">
+              Controller Sênior &amp; Head Executivo de Planejamento Financeiro (FP&amp;A)
+            </p>
+<p class="text-sm sm:text-base text-slate-600 leading-relaxed max-w-3xl mb-6">
+              Liderança de governança contábil-tributária, programas de Fast Close e transformação digital (SAP S/4HANA &amp; Power BI) em multinacionais e empresas B3. Foco em maximização de EBITDA, otimização de fluxo de caixa e rigor absoluto em IFRS/CPC e controles SOX.
+            </p>
+<!-- Quick Action Buttons -->
+<div class="flex flex-wrap items-center justify-center md:justify-start gap-3">
+<a class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-slate-900 text-white text-xs sm:text-sm font-semibold hover:bg-slate-800 transition-all shadow-sm hover:shadow" href="#contato">
+<span class="material-symbols-outlined text-[17px]">download</span>
+                Baixar CV Executivo (PDF)
+              </a>
+<a class="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg border border-slate-300 bg-white text-slate-700 text-xs sm:text-sm font-semibold hover:bg-slate-50 hover:border-slate-400 transition-all shadow-xs" href="https://linkedin.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[17px] text-secondary">share</span>
+                Conectar no LinkedIn
+              </a>
+<a class="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg bg-sky-600 text-white text-xs sm:text-sm font-semibold hover:bg-sky-700 transition-all shadow-xs" href="#contato">
+<span class="material-symbols-outlined text-[17px]">calendar_month</span>
+                Contato Direto
+              </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Grid de Métricas Principais (KPIs com Hover & Interatividade) -->
+<section class="max-w-6xl mx-auto px-4 sm:px-6 pb-12" id="metricas">
+<div class="flex items-center justify-between mb-5">
+<div>
+<span class="text-xs font-bold text-secondary uppercase tracking-widest">Impacto Mensurável</span>
+<h2 class="text-xl sm:text-2xl font-serif font-bold text-slate-900">KPIs de Alto Impacto &amp; Governança</h2>
+</div>
+<span class="text-xs text-slate-500 hidden sm:block">Resultados auditados e consolidados</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+<!-- KPI 1 -->
+<div class="glass-card glass-card-hover rounded-xl p-5 flex flex-col justify-between group">
+<div>
+<div class="flex items-center justify-between text-slate-500 mb-3">
+<span class="text-xs font-bold uppercase tracking-wider text-slate-600">EBITDA &amp; Fiscal</span>
+<div class="w-8 h-8 rounded-lg bg-sky-50 text-secondary flex items-center justify-center group-hover:bg-secondary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[18px]">payments</span>
+</div>
+</div>
+<div class="text-3xl font-extrabold text-slate-900 tracking-tight mb-1.5">R$ 48M+</div>
+<p class="text-xs text-slate-600 leading-relaxed">
+              Otimização de despesas e recuperação de créditos fiscais (PIS/COFINS/ICMS) no ciclo 2018–2024.
+            </p>
+</div>
+<div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-500">
+<span>Orçamento Base Zero</span>
+<span class="font-semibold text-emerald-600">+ Eficiência</span>
+</div>
+</div>
+<!-- KPI 2 -->
+<div class="glass-card glass-card-hover rounded-xl p-5 flex flex-col justify-between group">
+<div>
+<div class="flex items-center justify-between text-slate-500 mb-3">
+<span class="text-xs font-bold uppercase tracking-wider text-slate-600">Big Four Audit</span>
+<div class="w-8 h-8 rounded-lg bg-sky-50 text-secondary flex items-center justify-center group-hover:bg-secondary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</div>
+</div>
+<div class="text-3xl font-extrabold text-secondary tracking-tight mb-1.5">100%</div>
+<p class="text-xs text-slate-600 leading-relaxed">
+              Pareceres limpos ("Clean Opinion") em 12 ciclos seguidos por PwC e EY sem ressalvas ou deficiências.
+            </p>
+</div>
+<div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-500">
+<span>SOX 404 &amp; IFRS</span>
+<span class="font-semibold text-secondary">Zero Falhas</span>
+</div>
+</div>
+<!-- KPI 3 -->
+<div class="glass-card glass-card-hover rounded-xl p-5 flex flex-col justify-between group">
+<div>
+<div class="flex items-center justify-between text-slate-500 mb-3">
+<span class="text-xs font-bold uppercase tracking-wider text-slate-600">Fast Close</span>
+<div class="w-8 h-8 rounded-lg bg-sky-50 text-secondary flex items-center justify-center group-hover:bg-secondary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[18px]">timer</span>
+</div>
+</div>
+<div class="text-3xl font-extrabold text-slate-900 tracking-tight mb-1.5">-40%</div>
+<p class="text-xs text-slate-600 leading-relaxed">
+              Redução do ciclo de fechamento contábil de D+10 para D+6 úteis com robotização e conciliações SAP.
+            </p>
+</div>
+<div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-500">
+<span>Tempo Economizado</span>
+<span class="font-semibold text-slate-800">32h/mês equipe</span>
+</div>
+</div>
+<!-- KPI 4 -->
+<div class="glass-card glass-card-hover rounded-xl p-5 flex flex-col justify-between group">
+<div>
+<div class="flex items-center justify-between text-slate-500 mb-3">
+<span class="text-xs font-bold uppercase tracking-wider text-slate-600">Escopo Sob Gestão</span>
+<div class="w-8 h-8 rounded-lg bg-sky-50 text-secondary flex items-center justify-center group-hover:bg-secondary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[18px]">account_balance</span>
+</div>
+</div>
+<div class="text-3xl font-extrabold text-slate-900 tracking-tight mb-1.5">R$ 1.2B</div>
+<p class="text-xs text-slate-600 leading-relaxed">
+              Faturamento bruto anual consolidado gerido com equipe multidisciplinar de 35 especialistas.
+            </p>
+</div>
+<div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-500">
+<span>Estrutura</span>
+<span class="font-semibold text-slate-800">14 Filiais / CNPJs</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Linha do Tempo / Trajetória Executiva Concisa -->
+<section class="max-w-6xl mx-auto px-4 sm:px-6 pb-12" id="trajetoria">
+<div class="flex items-center justify-between mb-5">
+<div>
+<span class="text-xs font-bold text-secondary uppercase tracking-widest">Carreira &amp; Mandatos</span>
+<h2 class="text-xl sm:text-2xl font-serif font-bold text-slate-900">Trajetória Profissional em Destaque</h2>
+</div>
+<span class="text-xs text-slate-500 hidden sm:block">Foco em entregas quantificadas</span>
+</div>
+<div class="space-y-4">
+<!-- Posição 1 -->
+<div class="glass-card glass-card-hover rounded-xl p-5 sm:p-6 border border-slate-200/80">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 mb-3 border-b border-slate-100">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-slate-900 text-white flex items-center justify-center font-bold text-xs shrink-0">
+                NC
+              </div>
+<div>
+<div class="flex items-center gap-2">
+<h3 class="font-bold text-base text-slate-900">Nexus Capital &amp; Logística S.A.</h3>
+<span class="bg-sky-100 text-sky-800 text-[10px] font-bold px-2 py-0.5 rounded-full">Atual</span>
+</div>
+<p class="text-xs font-semibold text-secondary">Controller Geral &amp; Head de FP&amp;A</p>
+</div>
+</div>
+<div class="text-xs text-slate-500 sm:text-right font-medium">
+              2020 — Presente • Reporte direto ao CFO e Conselho
+            </div>
+</div>
+<p class="text-xs sm:text-sm text-slate-600 mb-3 leading-relaxed">
+            Gestão de equipe com 35 profissionais em Contabilidade, Tributário, Custos e FP&amp;A para holding com faturamento anual de R$ 1,2B.
+          </p>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-2.5 text-xs text-slate-700">
+<div class="flex items-start gap-1.5 p-2 rounded-lg bg-slate-50 border border-slate-100">
+<span class="material-symbols-outlined text-secondary text-[16px] shrink-0 mt-0.5">check_circle</span>
+<span><strong>OBZ:</strong> -R$ 22M em despesas gerais (SG&amp;A) logo no 1º ano.</span>
+</div>
+<div class="flex items-start gap-1.5 p-2 rounded-lg bg-slate-50 border border-slate-100">
+<span class="material-symbols-outlined text-secondary text-[16px] shrink-0 mt-0.5">check_circle</span>
+<span><strong>Fast Close:</strong> Fechamento reduzido de 10 para 6 dias úteis.</span>
+</div>
+<div class="flex items-start gap-1.5 p-2 rounded-lg bg-slate-50 border border-slate-100">
+<span class="material-symbols-outlined text-secondary text-[16px] shrink-0 mt-0.5">check_circle</span>
+<span><strong>M&amp;A:</strong> Due diligence e integração de 2 empresas (R$ 160M).</span>
+</div>
+</div>
+</div>
+<!-- Posição 2 -->
+<div class="glass-card glass-card-hover rounded-xl p-5 sm:p-6 border border-slate-200/80">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 mb-3 border-b border-slate-100">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-slate-100 text-slate-800 flex items-center justify-center font-bold text-xs shrink-0">
+                GM
+              </div>
+<div>
+<h3 class="font-bold text-base text-slate-900">Grupo Mantovani Indústria &amp; Varejo</h3>
+<p class="text-xs font-semibold text-secondary">Gerente Sênior de Controladoria e FP&amp;A</p>
+</div>
+</div>
+<div class="text-xs text-slate-500 sm:text-right font-medium">
+              2016 — 2020 • 3 Plantas Industriais &amp; 42 Lojas
+            </div>
+</div>
+<p class="text-xs sm:text-sm text-slate-600 mb-3 leading-relaxed">
+            Liderança do turnaround contábil, custeio fabril (Standard &amp; ABC) e migração corporativa de ERP.
+          </p>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-2.5 text-xs text-slate-700">
+<div class="flex items-start gap-1.5 p-2 rounded-lg bg-slate-50 border border-slate-100">
+<span class="material-symbols-outlined text-secondary text-[16px] shrink-0 mt-0.5">check_circle</span>
+<span><strong>SAP S/4HANA:</strong> Rollout do módulo FI/CO concluído 8% abaixo do budget.</span>
+</div>
+<div class="flex items-start gap-1.5 p-2 rounded-lg bg-slate-50 border border-slate-100">
+<span class="material-symbols-outlined text-secondary text-[16px] shrink-0 mt-0.5">check_circle</span>
+<span><strong>Custos:</strong> R$ 14M economizados via eliminação de desperdícios produtivos.</span>
+</div>
+<div class="flex items-start gap-1.5 p-2 rounded-lg bg-slate-50 border border-slate-100">
+<span class="material-symbols-outlined text-secondary text-[16px] shrink-0 mt-0.5">check_circle</span>
+<span><strong>DRE em Tempo Real:</strong> Painéis automatizados no Power BI para diretoria.</span>
+</div>
+</div>
+</div>
+<!-- Posição 3 -->
+<div class="glass-card glass-card-hover rounded-xl p-5 sm:p-6 border border-slate-200/80">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 mb-3 border-b border-slate-100">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-slate-100 text-slate-800 flex items-center justify-center font-bold text-xs shrink-0">
+                PwC
+              </div>
+<div>
+<h3 class="font-bold text-base text-slate-900">PwC Brasil (PricewaterhouseCoopers)</h3>
+<p class="text-xs font-semibold text-secondary">Coordenador Contábil Sênior (Audit Services)</p>
+</div>
+</div>
+<div class="text-xs text-slate-500 sm:text-right font-medium">
+              2012 — 2016 • Clientes Listados B3 &amp; SEC (US-GAAP)
+            </div>
+</div>
+<p class="text-xs sm:text-sm text-slate-600 mb-3 leading-relaxed">
+            Coordenação técnica de auditorias externas complexas, revisão de notas explicativas e conformidade com Sarbanes-Oxley (SOX 404).
+          </p>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-2.5 text-xs text-slate-700">
+<div class="flex items-start gap-1.5 p-2 rounded-lg bg-slate-50 border border-slate-100">
+<span class="material-symbols-outlined text-secondary text-[16px] shrink-0 mt-0.5">check_circle</span>
+<span><strong>Companhias Abertas:</strong> 8 auditorias completas de balanços B3.</span>
+</div>
+<div class="flex items-start gap-1.5 p-2 rounded-lg bg-slate-50 border border-slate-100">
+<span class="material-symbols-outlined text-secondary text-[16px] shrink-0 mt-0.5">check_circle</span>
+<span><strong>Controles:</strong> +45 relatórios técnicos emitidos a conselhos fiscais.</span>
+</div>
+<div class="flex items-start gap-1.5 p-2 rounded-lg bg-slate-50 border border-slate-100">
+<span class="material-symbols-outlined text-secondary text-[16px] shrink-0 mt-0.5">check_circle</span>
+<span><strong>IFRS / CPC:</strong> Base técnica sólida e rigor de auditoria Big Four.</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Hard Skills, Stack Tecnológico & Credenciais -->
+<section class="max-w-6xl mx-auto px-4 sm:px-6 pb-12" id="competencias">
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+<!-- Hard Skills & Stack (2 Colunas) -->
+<div class="lg:col-span-2 glass-card rounded-xl p-6 border border-slate-200/80">
+<div class="flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-secondary text-[22px]">layers</span>
+<h2 class="text-lg font-serif font-bold text-slate-900">Hard Skills &amp; Stack Tecnológico</h2>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<!-- Box 1 -->
+<div class="p-3.5 bg-slate-50/80 rounded-lg border border-slate-100">
+<span class="text-xs font-bold text-slate-800 uppercase tracking-wider block mb-2">FP&amp;A e Gestão Estratégica</span>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 bg-white text-slate-700 text-xs font-medium rounded border border-slate-200">Orçamento Base Zero (OBZ)</span>
+<span class="px-2 py-0.5 bg-white text-slate-700 text-xs font-medium rounded border border-slate-200">Rolling Forecast</span>
+<span class="px-2 py-0.5 bg-white text-slate-700 text-xs font-medium rounded border border-slate-200">Valuation &amp; DCF</span>
+<span class="px-2 py-0.5 bg-white text-slate-700 text-xs font-medium rounded border border-slate-200">DRE Gerencial</span>
+<span class="px-2 py-0.5 bg-white text-slate-700 text-xs font-medium rounded border border-slate-200">Custos Industriais ABC</span>
+</div>
+</div>
+<!-- Box 2 -->
+<div class="p-3.5 bg-slate-50/80 rounded-lg border border-slate-100">
+<span class="text-xs font-bold text-slate-800 uppercase tracking-wider block mb-2">Governança &amp; Contabilidade</span>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 bg-white text-slate-700 text-xs font-medium rounded border border-slate-200">IFRS / CPC Pleno</span>
+<span class="px-2 py-0.5 bg-white text-slate-700 text-xs font-medium rounded border border-slate-200">SOX 404</span>
+<span class="px-2 py-0.5 bg-white text-slate-700 text-xs font-medium rounded border border-slate-200">Fast Close</span>
+<span class="px-2 py-0.5 bg-white text-slate-700 text-xs font-medium rounded border border-slate-200">Due Diligence</span>
+<span class="px-2 py-0.5 bg-white text-slate-700 text-xs font-medium rounded border border-slate-200">Planejamento Tributário</span>
+</div>
+</div>
+<!-- Box 3 -->
+<div class="p-3.5 bg-slate-50/80 rounded-lg border border-slate-100 sm:col-span-2">
+<span class="text-xs font-bold text-slate-800 uppercase tracking-wider block mb-2">Sistemas, Analytics &amp; Automação</span>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 bg-sky-50 text-sky-800 text-xs font-semibold rounded border border-sky-200">SAP S/4HANA (FI/CO)</span>
+<span class="px-2 py-0.5 bg-sky-50 text-sky-800 text-xs font-semibold rounded border border-sky-200">Power BI (DAX)</span>
+<span class="px-2 py-0.5 bg-sky-50 text-sky-800 text-xs font-semibold rounded border border-sky-200">Python (Pandas)</span>
+<span class="px-2 py-0.5 bg-white text-slate-700 text-xs font-medium rounded border border-slate-200">Oracle NetSuite</span>
+<span class="px-2 py-0.5 bg-white text-slate-700 text-xs font-medium rounded border border-slate-200">SQL para Finanças</span>
+<span class="px-2 py-0.5 bg-white text-slate-700 text-xs font-medium rounded border border-slate-200">RPA (UiPath)</span>
+<span class="px-2 py-0.5 bg-white text-slate-700 text-xs font-medium rounded border border-slate-200">Hyperion / OneStream</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Formação & Credenciais em Chips (1 Coluna) -->
+<div class="glass-card rounded-xl p-6 border border-slate-200/80 flex flex-col justify-between" id="formacao">
+<div>
+<div class="flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-secondary text-[22px]">school</span>
+<h2 class="text-lg font-serif font-bold text-slate-900">Formação &amp; Credenciais</h2>
+</div>
+<div class="space-y-3">
+<div class="p-2.5 rounded-lg bg-slate-50 border border-slate-100">
+<div class="flex items-center justify-between">
+<span class="text-xs font-bold text-slate-900">MBA Finanças &amp; Controladoria</span>
+<span class="text-[10px] bg-slate-200 px-1.5 py-0.5 rounded font-semibold text-slate-700">FGV-SP</span>
+</div>
+<span class="text-[11px] text-slate-500">Conclusão: 2017</span>
+</div>
+<div class="p-2.5 rounded-lg bg-slate-50 border border-slate-100">
+<div class="flex items-center justify-between">
+<span class="text-xs font-bold text-slate-900">Bacharelado em Ciências Contábeis</span>
+<span class="text-[10px] bg-slate-200 px-1.5 py-0.5 rounded font-semibold text-slate-700">FEA-USP</span>
+</div>
+<span class="text-[11px] text-slate-500">CRC/SP Regular e Ativo</span>
+</div>
+<div class="pt-1">
+<span class="text-[11px] font-bold text-slate-500 uppercase tracking-wider block mb-1.5">Certificações Internacionais</span>
+<div class="flex flex-col gap-1.5 text-xs text-slate-700">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[14px]">verified</span>
+<span><strong>CertIFR:</strong> ICAEW (Normas Internacionais IFRS)</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[14px]">verified</span>
+<span><strong>Corporate FP&amp;A:</strong> AFP (USA)</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[14px]">verified</span>
+<span><strong>SAP S/4HANA Finance:</strong> SAP Certified</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[14px]">verified</span>
+<span><strong>Lean Six Sigma:</strong> Green Belt</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-4 pt-3 border-t border-slate-100 text-[11px] text-slate-500 flex items-center gap-1.5">
+<span class="material-symbols-outlined text-emerald-600 text-[16px]">lock</span>
+            Conformidade perante CVM, SEC e Bacen.
+          </div>
+</div>
+</div>
+</section>
+<!-- Chamada de Contato Direto & Compacta -->
+<section class="max-w-6xl mx-auto px-4 sm:px-6 pb-16" id="contato">
+<div class="glass-card rounded-2xl p-6 sm:p-8 border border-slate-200/90 shadow-md">
+<div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
+<div class="max-w-xl">
+<span class="text-xs font-bold text-secondary uppercase tracking-widest">Contato &amp; Oportunidades</span>
+<h2 class="text-2xl font-serif font-bold text-slate-900 mt-1 mb-2">Vamos iniciar um diálogo executivo?</h2>
+<p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              Aberto para posições de liderança em Controladoria, Diretoria Financeira (CFO) e assentos em Conselhos Consultivos. Alinhamento rápido e confidencial.
+            </p>
+</div>
+<!-- Quick Connect Badges -->
+<div class="flex flex-col sm:flex-row flex-wrap items-stretch sm:items-center gap-3 w-full lg:w-auto">
+<a class="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg bg-slate-900 text-white text-xs sm:text-sm font-semibold hover:bg-slate-800 transition-all shadow-sm" href="mailto:rodrigo.mendes.controller@outlook.com">
+<span class="material-symbols-outlined text-[17px]">mail</span>
+              rodrigo.mendes.controller@outlook.com
+            </a>
+<a class="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg border border-slate-300 bg-white text-slate-700 text-xs sm:text-sm font-semibold hover:bg-slate-50 transition-all shadow-xs" href="tel:+5511984210933">
+<span class="material-symbols-outlined text-[17px] text-secondary">call</span>
+              +55 (11) 98421-0933
+            </a>
+<a class="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg bg-sky-50 text-sky-800 border border-sky-200 text-xs sm:text-sm font-semibold hover:bg-sky-100 transition-all" href="https://linkedin.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[17px]">badge</span>
+              LinkedIn Perfil
+            </a>
+</div>
+</div>
+<div class="mt-6 pt-4 border-t border-slate-200/70 flex flex-wrap items-center justify-between gap-2 text-xs text-slate-500">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-slate-400">shield</span>
+            Acordo de Confidencialidade (NDA) disponível para processos seletivos e advisory.
+          </span>
+<span class="font-medium text-slate-700">São Paulo, SP • Disponibilidade Imediata sob Negociação</span>
+</div>
+</div>
+</section>
+</main>
+<!-- Clean Minimal Footer -->
+<footer class="w-full bg-white border-t border-slate-200 py-6">
+<div class="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500">
+<div class="flex items-center gap-2">
+<span class="font-bold text-slate-800">Rodrigo Mendes</span>
+<span>•</span>
+<span>Dossiê Executivo de Controladoria Financeira &amp; FP&amp;A</span>
+</div>
+<div>
+        © 2024 Governança Financeira. Acesso Confidencial &amp; Qualificado.
+      </div>
+</div>
+</footer>
+</body></html>
